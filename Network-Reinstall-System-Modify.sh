@@ -110,7 +110,7 @@ fi
 if [ $CXTisCN != "Yes" ];then
     echo "Core Download（Global）..."
     #wget -O
-    wget --no-check-certificate -qO ~/Core_Install.sh 'https://cxthhhhh.com/CXT-Library/Network-Reinstall-System-Modify/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
+    wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/jashok4/Network-Reinstall-System-Modify/master/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
     CentOSMirrors=""
     CentOSVaultMirrors=""
     DebianMirrors=""
@@ -118,7 +118,7 @@ if [ $CXTisCN != "Yes" ];then
 else
     echo "Core Download（CN）..."
     #wget -O
-    wget --no-check-certificate -qO ~/Core_Install.sh 'https://caoxiaotian.com/CXT-Library/Network-Reinstall-System-Modify/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
+    wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/jashok4/Network-Reinstall-System-Modify/master/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
     CXTrandom=$RANDOM
     if [ $[CXTrandom%2] == "0" ];then
         echo "本次随机使用阿里源"
@@ -252,7 +252,7 @@ echo "                                                                "
     4) echo -e "\nInstall...OpenWRT (UEFI)\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -firmware -dd "https://odc.cxthhhhh.com/d/SyStem/OpenWRT-Virtualization-Servers/Stable/openwrt-x86-64-generic-squashfs-combined-efi.img.gz" $DebianMirrors $CXTaddLine ;;
     5) echo -e "\nInstall...Oracle 9(UEFI)\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -firmware -dd "https://odc.cxthhhhh.com/d/SyStem/Oracle/Oracle_9.X_x64_UEFI_NetInstallation_Stable_v1.9.vhd.gz" $DebianMirrors $CXTaddLine ;;
     6) echo -e "\nInstall...Rocky 9(UEFI)\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -firmware -dd "https://odc.cxthhhhh.com/d/SyStem/Rocky/Rocky_8.X_x64_UEFI_NetInstallation_Stable_v6.9.vhd.gz" $DebianMirrors $CXTaddLine ;;
-    7) echo -e "\nInstall...Rocky 8(UEFI)\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -firmware -dd "https://odc.cxthhhhh.com/d/SyStem/Rocky/Rocky_8.X_x64_UEFI_NetInstallation_Stable_v6.9.vhd.gz" $DebianMirrors $CXTaddLine ;;
+    7) echo -e "\nInstall...Rocky 8(UEFI)\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -firmware -dd "https://soft.shaobing.ru/Install/OS/Rocky_8.X_x64_UEFI_NetInstallation_Stable_v6.9.vhd.gz" $DebianMirrors $CXTaddLine ;;
     8) echo -e "\nInstall...Ubuntu 22(UEFI)\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -u 22.04 -a -v 64 -firmware $UbuntuMirrors $CXTaddLine ;;
     9) echo -e "\nInstall...Ubuntu 20(UEFI)\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -u 20.04 -a -v 64 -firmware $UbuntuMirrors $CXTaddLine ;;
     21) echo -e "\nInstall...Windows Server 2022(UEFI)\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -firmware -dd "https://odc.cxthhhhh.com/d/SyStem/Windows_DD_Disks/Disk_Windows_Server_2022_DataCenter_CN_v2.12_UEFI.vhd.gz" $DebianMirrors $CXTaddLine ;;
@@ -313,7 +313,7 @@ echo "                                                                "
     6) echo -e "\nInstall...OpenWRT\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -dd "https://odc.cxthhhhh.com/d/SyStem/OpenWRT-Virtualization-Servers/Stable/openwrt-x86-64-generic-squashfs-combined.img.gz" $DebianMirrors $CXTaddLine ;;
     7) echo -e "\nInstall...Oracle 9\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -dd "https://odc.cxthhhhh.com/d/SyStem/Oracle/Oracle_9.X_x64_Legacy_NetInstallation_Stable_v1.8.vhd.gz" $DebianMirrors $CXTaddLine ;;
     8) echo -e "\nInstall...Rocky 9\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -dd "https://odc.cxthhhhh.com/d/SyStem/Rocky/Rocky_8.X_x64_Legacy_NetInstallation_Stable_v6.8.vhd.gz" $DebianMirrors $CXTaddLine ;;
-    9) echo -e "\nInstall...Rocky 8\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -dd "https://odc.cxthhhhh.com/d/SyStem/Rocky/Rocky_8.X_x64_Legacy_NetInstallation_Stable_v6.8.vhd.gz" $DebianMirrors $CXTaddLine ;;
+    9) echo -e "\nInstall...Rocky 8\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -dd "https://soft.shaobing.ru/Install/OS/Rocky_8.X_x64_Legacy_NetInstallation_Stable_v6.8.vhd.gz" $DebianMirrors $CXTaddLine ;;
     10) echo -e "\nInstall...Ubuntu 22\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -u 22.04 -a -v 64 $UbuntuMirrors $CXTaddLine ;;
     11) echo -e "\nInstall...Ubuntu 20\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -u 20.04 -a -v 64 $UbuntuMirrors $CXTaddLine ;;
     21) echo -e "\nInstall...Windows Server 2022\n"; read -s -n1 -p "任意键继续(Press any key to continue...)" ; bash ~/Core_Install.sh -a -v 64 -dd "https://odc.cxthhhhh.com/d/SyStem/Windows_DD_Disks/Disk_Windows_Server_2022_DataCenter_CN_v2.12.vhd.gz" $DebianMirrors $CXTaddLine ;;
