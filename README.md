@@ -56,6 +56,9 @@
   </h3>
   <img src="https://raw.githubusercontent.com/MeowLove/Network-Reinstall-System-Modify/master/background/Preview2021.png">
 </div>
+<div>
+  <h3>wget --no-check-certificate -qO ~/Network-Reinstall-System-Modify.sh 'https://raw.githubusercontent.com/jashok4/Network-Reinstall-System-Modify/master/Network-Reinstall-System-Modify.sh' && chmod a+x ~/Network-Reinstall-System-Modify.sh && bash ~/Network-Reinstall-System-Modify.sh</h3
+</div>
 
 ## 一键网络重装系统 - 魔改版（Network-Reinstall-System-Modify）
 
